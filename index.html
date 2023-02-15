@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn-icons-png.flaticon.com/512/4052/4052984.png"
+    />
+    <link rel="stylesheet" href="./components/css/index.css" />
+    <!-- Adding test  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Adding the Jquery file  -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    <!-- All the JS Files -->
+    <script type="module" src="./components/js/index.js"></script>
+    <script type="module" src="./components/js/fetchingAllData.js"></script>
+    <script
+      type="module"
+      src="./components/js/actionArea/weatherFormHandler.js"
+    ></script>
+    <script
+      type="module"
+      src="./components/js/actionArea/syncWeather.js"
+    ></script>
+    <script
+      type="module"
+      src="./components/js/actionArea/closeButton.js"
+    ></script>
+
+    <!-- Adding the icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div id="loader">
+      <div class="loader"></div>
+    </div>
+    <div id="form-area">
+      <form id="form">
+        <div id="form-input">
+          <label> Location </label>
+          <input
+            id="location"
+            name="location"
+            placeholder="location With Country"
+            required
+          />
+        </div>
+        <button id="weather-form-button">Submit</button>
+      </form>
+    </div>
+
+    <div id="main-area">
+      <div id="left-current">
+        <div id="left-current-start">
+          <div id="left-current-city">
+            <h2 id="left-current-city-name"></h2>
+            <section>
+              <span class="material-symbols-outlined icon" id="icon">
+                sync
+              </span>
+              <span class="material-symbols-outlined icon" id="icon-close">
+                close
+              </span>
+            </section>
+          </div>
+          <div id="display-area">
+            <div id="display-area-essentialDetails"></div>
+            <div id="display-area-alert"></div>
+          </div>
+          <div id="left-current-temprature-area">
+            <div id="left-current-forcast">
+              <p id="left-current-description"></p>
+              <img id="left-current-image" />
+            </div>
+            <h1 id="left-current-temprature"></h1>
+
+            <p id="left-current-feelsLike"></p>
+          </div>
+        </div>
+      </div>
+      <div id="all-weather-information">
+        <div id="all-weather-information-current"></div>
+        <div id="all-weather-forcast"></div>
+      </div>
+    </div>
+  </body>
+</html>

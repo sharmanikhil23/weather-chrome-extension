@@ -1,0 +1,272 @@
+#form-area {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: none;
+  font-size: 1rem;
+  position: absolute;
+  background-color: rebeccapurple;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#form-area #form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#form-area #form #form-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#form-area #form #form-input input {
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  margin: auto 1em;
+  color: black;
+  font-size: 2em;
+  font-weight: 500;
+  border: none;
+}
+#form-area #form #form-input label {
+  font-size: 2em;
+}
+#form-area #form #weather-form-button {
+  display: block;
+  margin: 1em;
+  padding: 0.5em 1em;
+  font-size: 2em;
+  border-radius: 5px;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+#form-area #form #weather-form-button:hover {
+  transform: scale(1.1, 1.1);
+}
+
+#main-area {
+  font-size: 1rem;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+#main-area #left-current {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: auto 1rem;
+}
+#main-area #left-current #left-current-city {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#main-area #left-current #left-current-city #left-current-city-name {
+  padding: 0.5em 1em;
+  font-size: 2em;
+  font-weight: 600;
+}
+#main-area #left-current #left-current-city section .icon {
+  margin: auto 0.2em;
+  padding: 0.5em 0em;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+#main-area #left-current #left-current-city section .icon:hover {
+  transform: scale(1.2, 1.2);
+}
+#main-area #left-current #display-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main-area #left-current #display-area #display-area-essentialDetails {
+  padding: 0.4em;
+}
+#main-area #left-current #display-area #display-area-essentialDetails #essential-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5em auto;
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+  padding: 0.5em 0.5em;
+}
+#main-area #left-current #display-area #display-area-essentialDetails #essential-detail p {
+  font-size: 1.5em;
+  margin: 0em 1em;
+}
+#main-area #left-current #display-area #display-area-alert {
+  margin: 1em auto;
+}
+#main-area #left-current #display-area #display-area-alert p {
+  font-size: 1.8em;
+  color: red;
+  font-weight: 500;
+}
+#main-area #left-current #left-current-temprature-area {
+  margin: 0em auto 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main-area #left-current #left-current-temprature-area #left-current-forcast {
+  margin: 0.5em auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#main-area #left-current #left-current-temprature-area #left-current-forcast p {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0px 0.5em;
+}
+#main-area #left-current #left-current-temprature-area #left-current-forcast img {
+  width: 50px;
+  height: 50px;
+}
+#main-area #left-current #left-current-temprature-area #left-current-temprature {
+  font-size: 2.5em;
+  margin: 0.5em auto;
+}
+#main-area #left-current #left-current-temprature-area #left-current-feelsLike {
+  margin: 0.5em auto;
+  color: royalblue;
+  font-size: 1.5em;
+}
+
+#all-weather-information {
+  font-size: 1rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: auto 2rem;
+}
+#all-weather-information #all-weather-information-current {
+  overflow-y: auto;
+  width: 100%;
+  scroll-behavior: smooth;
+  scrollbar-color: red;
+  scroll-margin: 0px;
+}
+#all-weather-information #all-weather-information-current .weather-forcast {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+#all-weather-information #all-weather-information-current .weather-forcast h3 {
+  font-size: 2em;
+  padding: 1rem;
+}
+#all-weather-information #all-weather-information-current .weather-forcast img {
+  width: 6em;
+  height: 6em;
+}
+#all-weather-information #all-weather-information-current .weather-forcast #forcecast-prec {
+  font-size: 1.5rem;
+  color: royalblue;
+}
+#all-weather-information #all-weather-forcast {
+  width: 100%;
+  font-size: 1rem;
+  margin: 2rem auto 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#all-weather-information #all-weather-forcast div {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 1rem auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+#all-weather-information #all-weather-forcast div h3 {
+  font-size: 2em;
+  padding: 1rem;
+}
+#all-weather-information #all-weather-forcast div img {
+  width: 6em;
+  height: 6em;
+}
+#all-weather-information #all-weather-forcast div #forcecast-prec {
+  font-size: 1.5rem;
+  color: royalblue;
+}
+
+#loader {
+  position: absolute;
+  background-color: black;
+  z-index: 5;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  margin: auto;
+  border: 20px solid #eaf0f6;
+  border-radius: 50%;
+  border-top: 20px solid blueviolet;
+  width: 100px;
+  height: 100px;
+  animation: spinner 4s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+*,
+::after,
+::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  min-width: 780px;
+  min-height: 500px !important;
+  max-height: 600px !important;
+  position: relative;
+}/*# sourceMappingURL=index.css.map */

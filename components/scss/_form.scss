@@ -1,0 +1,50 @@
+#form-area {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: none;
+  font-size: 1rem;
+  position: absolute;
+  background-color: rebeccapurple;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #form-input {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      input {
+        display: inline-block;
+        padding: 0.5em 0.5em;
+        margin: auto 1em;
+        color: black;
+        font-size: 2em;
+        font-weight: 500;
+        border: none;
+      }
+      label {
+        font-size: 2em;
+      }
+    }
+    #weather-form-button {
+      display: block;
+      margin: 1em;
+      padding: 0.5em 1em;
+      font-size: 2em;
+      border-radius: 5px;
+      font-weight: 500;
+      border: none;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+}
