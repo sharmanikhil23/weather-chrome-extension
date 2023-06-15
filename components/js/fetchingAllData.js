@@ -6,6 +6,9 @@ const getData = (location, callback) => {
     headers: { "Content-Type": "application/json" },
   })
     .then((result) => {
+      if (result.status != 200) {
+        return callback({ Error: "Error" }, undefined);
+      }
       return result.text();
     })
     .then((data) => {

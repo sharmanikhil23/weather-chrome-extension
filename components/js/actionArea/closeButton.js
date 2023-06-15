@@ -1,8 +1,9 @@
+import { printingAllLocations } from "./locations.js";
+
 const closeButton = document.getElementById("icon-close");
 
 closeButton.addEventListener("click", () => {
-  console.log("called");
-  localStorage.clear();
   let form = document.getElementById("form-area");
+  printingAllLocations();
   form.style.display = "flex";
 });

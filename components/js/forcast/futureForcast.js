@@ -8,7 +8,9 @@ export const setFutureForcast = ({ forecastday }) => {
     let temp = {
       day: getDay(today, i),
       icon: `https:` + forecastday[i].day.condition.icon,
-      temp: `${forecastday[i].day.maxtemp_c}&deg / ${forecastday[i].day.mintemp_c}&deg`,
+      temp: `${Math.round(forecastday[i].day.maxtemp_c)}&deg / ${Math.round(
+        forecastday[i].day.mintemp_c
+      )}&deg`,
       chances: Math.max(
         forecastday[i].day.daily_chance_of_rain,
         forecastday[i].day.daily_chance_of_snow
